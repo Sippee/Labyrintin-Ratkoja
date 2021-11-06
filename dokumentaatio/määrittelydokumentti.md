@@ -1,12 +1,12 @@
-# Ohjelmoitikielet
+## Ohjelmoitikielet
 Käytän pythonia, ja aion käyttää sitä tässä työssä. Ymmärrän hieman javaa, mutta en pysty vertaisarvioimaan javalla tehtyä projektia hyvin.  
-# Algoritmit ja tietorakenteet
+## Algoritmit ja tietorakenteet
 En vielä tiedä. Lisään heti, kun keksin projektin aiheen.  
-# Ongelma ja sen tavoitteet
+## Ongelma ja sen tavoitteet
 En vielä tiedä.  
-# Lähteet
+## Lähteet
 .
-# Opinto-ohjelma
+## Opinto-ohjelma
 Kuulun vielä tällä hetkellä fysikaalisten tieteiden kandiohjelmaan.
-# Kieli
+## Kieli
 Teen projektin Suomeksi, mutta tarvittaessa voin tehdä sen Englanniksi tai Suomeksi.

@@ -9,4 +9,4 @@ En vielä tiedä.
 # Opinto-ohjelma
 Kuulun vielä tällä hetkellä fysikaalisten tieteiden kandiohjelmaan.
 # Kieli
-Voin tehdä projektin Englanniksi tai Suomeksi. Todennäköisesti Suomeksi ellei erikseen haluta vaihtaa.
+Teen projektin Suomeksi, mutta tarvittaessa voin tehdä sen Englanniksi tai Suomeksi.

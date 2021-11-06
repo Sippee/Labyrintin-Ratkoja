@@ -5,7 +5,7 @@ En vielä tiedä. Lisään heti, kun keksin projektin aiheen.
 # Ongelma ja sen tavoitteet
 En vielä tiedä.  
 # Lähteet
--
+.
 # Opinto-ohjelma
 Kuulun vielä tällä hetkellä fysikaalisten tieteiden kandiohjelmaan.
 # Kieli

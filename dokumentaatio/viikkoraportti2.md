@@ -1,5 +1,5 @@
 # Viikko 2
-Selvitin tällä viikolla itselleni aiheeksi maze solving, ja tein ensimmäisen koodin pätkän bfs:ää.
+Selvitin tällä viikolla itselleni aiheeksi maze solving, ja tein ensimmäisen koodin pätkän bfs:ää. En tehnyt vielä testejä.
 Tarkoituksena ratkaista sokkelon nopein reitti.
 Opin lisää ja tuli muistiin takaisin asioita bfs ja dfs.
 Seuraavaksi teen selkeämmän rakenteen koodiin, ja lisää toimintoja?

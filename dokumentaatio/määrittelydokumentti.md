@@ -5,7 +5,7 @@ DFS, eli deep first search. Tällä algoritmillä yleensä ratkaistaan lyhin rei
 ## Ongelma ja sen tavoitteet
 Ratkaista sokkeloiden lyhin reitti. Erilaisten sokkeloiden ratkaiseminen  
 ## Lähteet
-.
+(Pitää lisätä, luin monesta paikkaa, ja tira-kursseilta)
 ## Opinto-ohjelma
 Kuulun vielä tällä hetkellä fysikaalisten tieteiden kandiohjelmaan.
 ## Kieli

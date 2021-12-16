@@ -2,9 +2,9 @@
 """
 
 from pyamaze import maze
-from maze.maze_wallfollower import wallfollower
-from maze.maze_dead_end_filling import dead_end_filling
-from maze.maze_bfs import bfs
+from src.maze.maze_wallfollower import wallfollower
+from src.maze.maze_dead_end_filling import dead_end_filling
+from src.maze.maze_bfs import bfs
 #import time
 
 class MazeSolver:

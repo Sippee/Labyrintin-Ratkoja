@@ -3,7 +3,7 @@
 
 import time
 from pyamaze import agent
-from maze.mazesolver import MazeSolver
+from src.maze.mazesolver import MazeSolver
 
 ms = MazeSolver(4,4)
 ms2 = MazeSolver(4,4)

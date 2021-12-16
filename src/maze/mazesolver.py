@@ -1,27 +1,61 @@
-from pyamaze import maze, agent
+"""Toimii maze-olion luomisessa ja servicenä
+"""
+
+from pyamaze import maze
 from maze.maze_wallfollower import wallfollower
 from maze.maze_dead_end_filling import dead_end_filling
 from maze.maze_bfs import bfs
 #import time
 
 class MazeSolver:
-    def __init__(self, x, y, loop_percentage = 0):
-        self.x = x
-        self.y = y
+    """Luokka toimii maze-olion luomisessa
+    ja servicenä algoritmeille
+    """
+
+    def __init__(self, height, width, loop_percentage = 0):
+        """Luokan konstruktori
+
+        Args:
+            height: labyrintin korkeus
+            width: labyrintin leveys
+            loop_percentage: kuinka paljon looppeja labyrintissä voi olla,
+                0% tarkoittaa täydellistä labyrinttiä
+        """
+
+        self.height = height
+        self.width = width
         self.loop_percentage = loop_percentage
-        self.maze = maze(x,y)
+        self.maze = maze(height,width)
 
     def wall_follower(self):
+        """
+        Returns:
+            wallfollower: palauttaa wallfollower algoritmin,
+            joka palauttaa reitin, jota pitkin se kulki
+        """
+
         return wallfollower(self.maze)
 
     def dead_end_filling(self):
+        """
+        Returns:
+            dead_end_filling: palauttaa dead end filling algoritmin,
+            joka palauttaa reitin, jota pitkin se kulki
+        """
+
         return dead_end_filling(self.maze)
-    
+
     def bfs(self):
+        """
+        Returns:
+            bfs: palauttaa bfs algoritmin,
+            joka palauttaa reitin, jota pitkin se kulki
+        """
+
         return bfs(self.maze)
 
- #TESTAUSTA VARTEN
-"""ms = MazeSolver(10,10)
+"""#TESTAUSTA VARTEN
+ms = MazeSolver(10,10)
 
 option = "100"
 
@@ -97,4 +131,4 @@ while option != "0":
         a = agent(ms.maze, footprints=True)
 
         ms.maze.tracePath({a:polku})
-"""
+    """

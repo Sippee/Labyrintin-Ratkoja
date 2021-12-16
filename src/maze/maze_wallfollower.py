@@ -1,4 +1,17 @@
+"""Wall follower algoritmi
+"""
+
 def wallfollower(maze, aloitus = None):
+    """wall follower algoritmin päärunko
+
+    Args:
+        maze: maze-olio, sisältää tiedon labyrintistä
+        aloitus: optional, oletuksena aloitusruutu on labyrintin oikeassa alakulmassa
+
+    Returns:
+        polku: dead end filling algoritmin kulkema polku
+    """
+
     if aloitus is None:
         aloitus = (maze.rows, maze.cols)
     polku = []
@@ -6,7 +19,7 @@ def wallfollower(maze, aloitus = None):
     ratkaistu = False
     nykyruutu = aloitus
 
-    while ratkaistu != True:
+    while ratkaistu is not True:
         if nykyruutu == (1,1):
             ratkaistu = True
 
@@ -24,44 +37,75 @@ def wallfollower(maze, aloitus = None):
     return polku
 
 def tarkista_vasen_seina(maze, suunta, nykyruutu):
+    """Methodi tarkistaa, onko nykyisen ruudun vasemmalla seinä
+
+    Args:
+        maze: maze-olio, sisältää tiedon labyrintistä
+        suunta: nykyinen etenemissuunta
+        nykyruutu: nykyinen ruutu
+
+    returns:
+        Bool: True, jos ei ole seinää, ja False, jos on seinä
+    """
+
     if suunta == "N":
-        if maze.maze_map[nykyruutu]["W"] is True:
+        if maze.maze_map[nykyruutu]["W"] == True:
             return True
 
     elif suunta == "E":
-        if maze.maze_map[nykyruutu]["N"] is True:
+        if maze.maze_map[nykyruutu]["N"] == True:
             return True
 
     elif suunta == "S":
-        if maze.maze_map[nykyruutu]["E"] is True:
+        if maze.maze_map[nykyruutu]["E"] == True:
             return True
 
     elif suunta == "W":
-        if maze.maze_map[nykyruutu]["S"] is True:
+        if maze.maze_map[nykyruutu]["S"] == True:
             return True
 
     return False
 
 def tarkista_seina_edessa(maze, suunta, nykyruutu):
+    """Methodi tarkistaa, onko nykyisen ruudun edessä seinä
+
+    Args:
+        maze: maze-olio, sisältää tiedon labyrintistä
+        suunta: nykyinen etenemissuunta
+        nykyruutu: nykyinen ruutu
+
+    Returns:
+        Bool: True, jos ei ole seinää, ja False, jos on seinä
+    """
+
     if suunta == "N":
-        if maze.maze_map[nykyruutu]["N"] is True:
+        if maze.maze_map[nykyruutu]["N"] == True:
             return True
 
     elif suunta == "E":
-        if maze.maze_map[nykyruutu]["E"] is True:
+        if maze.maze_map[nykyruutu]["E"] == True:
             return True
 
     elif suunta == "S":
-        if maze.maze_map[nykyruutu]["S"] is True:
+        if maze.maze_map[nykyruutu]["S"] == True:
             return True
 
     elif suunta == "W":
-        if maze.maze_map[nykyruutu]["W"] is True:
+        if maze.maze_map[nykyruutu]["W"] == True:
             return True
 
     return False
 
 def kaanny_vasemmalle(suunta):
+    """Methodi muuttaa etenemissuunnan nykyisestä vasemmalle
+
+    Args:
+        suunta: nykyinen etenemissuunta
+
+    Returns:
+        suunta: uusi etenemissuunta
+    """
+
     if suunta == "W":
         suunta = "S"
 
@@ -77,6 +121,15 @@ def kaanny_vasemmalle(suunta):
     return suunta
 
 def kaanny_ympari(suunta):
+    """Methodi kääntää etenemissuunnan ympäri
+
+    Args:
+        suunta: nykyinen etenemissuunta
+
+    Returns:
+        suunta: uusi etenemissuunta
+    """
+
     if suunta == "W":
         suunta = "E"
 
@@ -92,6 +145,16 @@ def kaanny_ympari(suunta):
     return suunta
 
 def eteenpain(suunta, nykyruutu):
+    """Methodi liikuttaa nykyistä ruutua yhden ruudun eteenpäin
+
+    Args:
+        suunta: nykyinen etenemissuunta
+        nykyruutu: nykyinen ruutu
+
+    Returns:
+        nykyruutu: uusi ruutu
+    """
+
     if suunta == "W":
         nykyruutu = (nykyruutu[0],nykyruutu[1]-1)
 

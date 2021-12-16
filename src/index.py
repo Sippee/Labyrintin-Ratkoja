@@ -1,9 +1,12 @@
+"""Tämä on sovelluksen logiikka
+"""
+
+import time
 from pyamaze import agent
 from maze.mazesolver import MazeSolver
-import time
 
 ms = MazeSolver(4,4)
-
+ms2 = MazeSolver(4,4)
 OPTION = "100"
 
 while OPTION != "0":
@@ -19,8 +22,9 @@ The maze has to be completely solved before closed\nVisual 10x10 Mazes:
         y = int(input("Type the wanted width of the maze: \n"))
         ms = MazeSolver(x,y)
         ms.maze.CreateMaze(saveMaze=True)
+        #mahdollinen ominaisuus uuden labyrintin teon jälkeen voisi heti runata sen
         #dt_string = datetime.datetime.now().strftime("%Y-%m-%d--%H-%M-%S")
-        #file = (f'maze--{dt_string}.csv')
+        #file = (f'src/maze/maze--{dt_string}.csv')
 
     elif OPTION == "2":
         ms.maze.CreateMaze(loadMaze="src/maze/maze-200x200.csv")
@@ -31,6 +35,8 @@ The maze has to be completely solved before closed\nVisual 10x10 Mazes:
 
         endtime=time.time_ns()
         print(f"\nTime elapsed with wall follower: {(endtime-starttime)/1000000} ms\n")
+
+        #ms.maze.run() # mahdollinen tapa korjata ongelma visualisointejen kanssa
 
     elif OPTION == "3":
         ms.maze.CreateMaze(loadMaze="src/maze/maze-200x200.csv")
@@ -53,15 +59,15 @@ The maze has to be completely solved before closed\nVisual 10x10 Mazes:
         print(f"\nTime elapsed with BFS: {(endtime-starttime)/1000000} ms\n")
 
     elif OPTION == "5":
-        ms.maze.CreateMaze(loadMaze="src/maze/maze-10x10.csv")
+        ms2.maze.CreateMaze(loadMaze="src/maze/maze-10x10.csv")
 
-        polku = ms.wall_follower()
+        polku = ms2.wall_follower()
 
-        a = agent(ms.maze, footprints=True)
+        a = agent(ms2.maze, footprints=True)
 
-        ms.maze.tracePath({a:polku})
+        ms2.maze.tracePath({a:polku})
 
-        ms.maze.run()
+        ms2.maze.run()
 
     elif OPTION == "6":
         ms.maze.CreateMaze(loadMaze="src/maze/maze-10x10.csv")

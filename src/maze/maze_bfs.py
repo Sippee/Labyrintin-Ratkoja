@@ -1,26 +1,39 @@
+"""bfs algoritmi
+"""
+
 from collections import deque
 
-def bfs(maze, aloitus = None):             # aloitus on aloitus ruutu, joka tässä tilanteessa vielä on (1,1)
+def bfs(maze, aloitus = None):
+    """bfs algoritmin runko
+
+    Args:
+        maze: maze-olio, sisältää tiedon labyrintistä
+        aloitus: optional, oletuksena aloitusruutu on labyrintin oikeassa alakulmassa
+
+    Returns:
+        seurvaavatpolku: bfs algoritmin kulkema polku
+    """
+
     if aloitus is None:
         aloitus = (maze.rows, maze.cols)
-    seuraavat = deque()                 # seuraavat sisältää tiedon pääseekö viereisiin ruutuihin
+    seuraavat = deque()      # seuraavat sisältää tiedon pääseekö viereisiin ruutuihin
     seuraavat.append(aloitus)
-    polku = {}                          # bfs kulkema polku
+    polku = {}
     tutkittu = [aloitus]
 
     while len(seuraavat)>0:
-        nykyruutu=seuraavat.popleft()       # nykyruutu = nykyinen ruutu
+        nykyruutu=seuraavat.popleft()
         if nykyruutu==(1,1):
             break
-        for d in "ESNW":
-            if maze.maze_map[nykyruutu][d] is True:
-                if d=="E":
-                    lapsi = (nykyruutu[0], nykyruutu[1]+1)      # lapsi = ruudun lapsi, eli nykyisen ruudun viereinen ruutu
-                elif d=="W":
+        for direction in "ESNW":
+            if maze.maze_map[nykyruutu][direction] == True:
+                if direction=="E":
+                    lapsi = (nykyruutu[0], nykyruutu[1]+1)
+                elif direction=="W":
                     lapsi = (nykyruutu[0], nykyruutu[1]-1)
-                elif d=="S":
+                elif direction=="S":
                     lapsi = (nykyruutu[0]+1, nykyruutu[1])
-                elif d=="N":
+                elif direction=="N":
                     lapsi = (nykyruutu[0]-1, nykyruutu[1])
                 if lapsi in tutkittu:
                     continue

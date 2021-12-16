@@ -1,4 +1,20 @@
 # Labyrintin Ratkoja
+Labyrintin Ratkoja-projekti kurssille Aineopintojen harjoitustyö: Tietorakenteet ja algoritmit (periodi II), Laboratoriotyöskentely.
+
+## Ohjelman käynnistäminen
+
+Ennen ohjelman käynnistämistä, asenna riippuvuudet komennolla:
+
+```bash
+poetry install
+```
+
+Nyt ohjelman voi käynnistää komennolla:
+
+```
+poetry run invoke start
+```
+
 ## Viikkoraportit
 [Viikkoraportti 1](dokumentaatio/viikkoraportti1.md)  
 [Viikkoraportti 2](dokumentaatio/viikkoraportti2.md)  

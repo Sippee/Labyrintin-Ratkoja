@@ -1,5 +1,6 @@
 # Labyrintin Ratkoja
-Labyrintin Ratkoja-projekti kurssille Aineopintojen harjoitustyö: Tietorakenteet ja algoritmit (periodi II), Laboratoriotyöskentely.
+Labyrintin Ratkoja-projekti kurssille Aineopintojen harjoitustyö: Tietorakenteet ja algoritmit (periodi II), Laboratoriotyöskentely.  
+Ohjelmassa käytetään Dead-end filling ja Wall follower algoritmejä selvittämään labyrintien reittejä.
 
 ## Ohjelman käynnistäminen
 

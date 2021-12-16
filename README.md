@@ -8,5 +8,5 @@
 [Viikkoraportti 6](dokumentaatio/viikkoraportti6.md)  
 
 ## Dokumentaatio
-[Käyttöohje](dokumentaatio/kayttoohje.md)
-[Vaatimusmäärittely](dokumentaatio/määrittelydokumentti.md)
+[Käyttöohje](dokumentaatio/kayttoohje.md)  
+[Vaatimusmäärittely](dokumentaatio/määrittelydokumentti.md)  

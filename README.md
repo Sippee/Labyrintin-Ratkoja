@@ -9,3 +9,4 @@
 
 ## Dokumentaatio
 [Käyttöohje](dokumentaatio/kayttoohje.md)
+[Vaatimusmäärittely](dokumentaatio/määrittelydokumentti.md)

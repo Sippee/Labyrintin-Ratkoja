@@ -2,6 +2,10 @@
 
 ## Koodin testaus
 
+Pytestillä vielä huono tulos.
+
+Koodinlaadun tarkastamiseen käytetty pylintiä. Pylintin tarkastus asetuksia on hieman muokattu, sieltä on poistettu turhat tarkastukset. Pylint antaa arvosanaksi 10.
+
 ## Algoritmien testaus
 
 Pienen labyrintin ratkaisussa menee kaikilla algoritmeillä todella vähän aikaa, mutta suuremmilla labyrinteillä saadaa suuria aikaeroja. BFS on selkeästi hitaampi kuin molemmat algoritmit. Algoritmien nopeuden testaamisessa käytetään samaa labyrinttiä aina.

@@ -16,7 +16,7 @@ Aikavaativuus on O(n x m).
 
 Algoritmin tilavaativuus on O(n). Talteen otetaan vain polku, joka kuljetaan.
 
-[Esimerkki](kuvat/toteutus-esimerkki.png)
+[Esimerkki](./kuvat/toteutus-esimerkki.png)  
 *Kuvassa esitellään miten wall follower joutuu looppiin tai ratkeaa*
 
 ### Dead-end filling
@@ -27,7 +27,7 @@ Aikavaativuus on O(n x m).
 
 Tilavaativuus on O(n+m), n polun pituus ja m umpikujien määrä. Algoritmissä tallennetaan kuljettu polku ja löydetyt umpikujat. 
 
-[Esimerkki2](kuvat/toteutus-esimerkki2.png)
+[Esimerkki2](./kuvat/toteutus-esimerkki2.png)  
 *Kuvassa esimerkki dead-end filling löytää umpikujan, kulkee sitä ja täyttää sen, sitten kuljetaan polku wall followerin avulla*
 
 ## Työn mahdolliset puutteet ja parannusehdotukset

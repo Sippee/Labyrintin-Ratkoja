@@ -12,19 +12,16 @@ class MazeSolver:
     ja servicenä algoritmeille
     """
 
-    def __init__(self, height, width, loop_percentage = 0):
+    def __init__(self, height, width):
         """Luokan konstruktori
 
         Args:
             height: labyrintin korkeus
             width: labyrintin leveys
-            loop_percentage: kuinka paljon looppeja labyrintissä voi olla,
-                0% tarkoittaa täydellistä labyrinttiä
         """
 
         self.height = height
         self.width = width
-        self.loop_percentage = loop_percentage
         self.maze = maze(height,width)
 
     def wall_follower(self):

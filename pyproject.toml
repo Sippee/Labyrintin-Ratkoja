@@ -8,6 +8,7 @@ authors = ["Sippee <sippegaming@gmail.com>"]
 python = "^3.9"
 pyamaze = "^1.0.1"
 invoke = "^1.6.0"
+tk = "^0.1.0"
 
 [tool.poetry.dev-dependencies]
 pylint = "^2.12.2"

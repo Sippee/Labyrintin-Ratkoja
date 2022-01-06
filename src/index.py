@@ -10,7 +10,9 @@ ms2 = MazeSolver(5,5)
 OPTION = "100"
 
 while OPTION != "0":
-    OPTION = input("""Options:
+    OPTION = input("""Käyttöohjeessa kuinka suorittaa sovellus ilman virheitä.
+
+Options:
 CTRL+C:Sammuta
 1:Tallenna uusi labyrintti
 
@@ -25,17 +27,11 @@ Visuaalinen 5x5:
 7:BFS
 """)
 
-    """Restart application after using Timed mazes before using visual ones
-The maze has to be completely solved before closed"""
-
     if OPTION == "1":
-        x = int(input("Type the wanted heigth of the maze: \n"))
-        y = int(input("Type the wanted width of the maze: \n"))
+        x = int(input("Anna haluttu korkeus: \n"))
+        y = int(input("Anna haluttu leveys: \n"))
         ms = MazeSolver(x,y)
         ms.maze.CreateMaze(saveMaze=True)
-        #mahdollinen ominaisuus uuden labyrintin teon jälkeen voisi heti runata sen
-        #dt_string = datetime.datetime.now().strftime("%Y-%m-%d--%H-%M-%S")
-        #file = (f'src/maze/maze--{dt_string}.csv')
 
     elif OPTION == "2":
         ms = MazeSolver(5,5)
@@ -47,8 +43,6 @@ The maze has to be completely solved before closed"""
 
         endtime=time.time_ns()
         print(f"\nAikaa kului: {(endtime-starttime)/1000000} ms\n")
-
-        #ms.maze.run() # mahdollinen tapa korjata ongelma visualisointejen kanssa
 
     elif OPTION == "3":
         ms = MazeSolver(5,5)
@@ -74,7 +68,7 @@ The maze has to be completely solved before closed"""
 
     elif OPTION == "5":
         ms2 = MazeSolver(5,5)
-        ms2.maze.CreateMaze() #loadMaze="src/maze/maze-5x5.csv"
+        ms2.maze.CreateMaze()
 
         polku = ms2.wall_follower()
 
@@ -109,4 +103,4 @@ The maze has to be completely solved before closed"""
         ms.maze.run()
 
     else:
-        break
+        continue

@@ -30,3 +30,6 @@ Ensimmäisenä esimerkkinä 20x20 labyrintin ratkaisut:
 - BFS kului 533219.6 ms, eli 533 s, 8.88 min
 
 ![vertailu](./kuvat/testaus-nopeuksien-vertailu.PNG)
+*Kuvassa vertaillaa wall followerin ja dead-end fillingin aikoja*
+
+Huomataan, että dead-end filling kasvaa exponentiaalisesti, kun wallfollower ei kasva. Tämä todennäköisesti tapahtuu, koska labyrintti on täydellinen, eli dead-end filling käy koko labyrintin läpi, kun wallfollower voi käydä vain toisella puolella labyrintistä.

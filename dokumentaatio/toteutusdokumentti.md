@@ -32,11 +32,15 @@ Tilavaativuus on O(n + m), n polun pituus ja m umpikujien määrä. Algoritmiss�
 
 ## Työn mahdolliset puutteet ja parannusehdotukset
 
-Isoin parannus työhön olisi tehdä oma labyrintin luomis koodi. Käytän tässä työssä kirjastoa nimeltä pyamaze, joka käyttää tkinteriä, mutta sisältää turhia ja haittaavia ominaisuuksia tätä työtä varten. Pyamazen takia taustalla aina pyörii aina tkinter ikkuna, kun käyttää labyrintin ratkaisijaa.
+Isoin parannus työhön olisi tehdä oma labyrintin luomis koodi. Käytän tässä työssä kirjastoa nimeltä pyamaze, joka käyttää tkinteriä, mutta sisältää turhia ja haittaavia ominaisuuksia tätä työtä varten. Pyamazen takia taustalla aina pyörii aina tkinter ikkuna, kun käyttää labyrintin ratkaisijaa. Suurin labyrintti, jonka olen voinut luoda pyamazella, on 200x200, jonka tuottamisessa kului noin 20-30 minuuttia. Yritin luoda 400x400 labyrinttiä yli tunnin, ja se ei valmistunut.
 
 Työhön voisi myös lisätä UI:n, jonka avulla saataisiin parempi käyttäjäkokemus. UI olisi ollut helppo lisätä, mutta aiemmin mainitun ongelman takia se on vaikeaa.
 
 Dead-end filling algoritmissä voisi ehkä käyttää jotakin parempaa navigointi algoritmiä kuin wall follower.
+
+Käyttäjä voisi konfiguroida paremmin, minkä labyrintin haluaa tai millaisen haluaa luoda.
+
+Lisää toimintoja.
 
 ## Lähteet
 - [Wikipedia, Wall follower](https://en.wikipedia.org/wiki/Maze-solving_algorithm#Wall_follower)

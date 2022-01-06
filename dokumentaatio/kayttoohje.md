@@ -18,12 +18,14 @@ poetry run invoke start
 
 ## Ohjelman käynnistämisen jälkee
 - Ohjelma antaa ohjeet, mihin toimintoihin pääsee milläkin käskyllä
-- Ensimmäinen ohje "Save a new maze" on toimintoa varten, jonka avulla tallennetaan uusi labyrintti koneelle
-- Toinen ohje toimintoihin "Timed 200x200 Mazes", nämä ottavat vain ajan kauan algoritmillä kesti selvittää reitti 200x200 kokoisessa labyrintissä
-- Viimeinen ohje toimintoihin "Visual 10x10 Mazes", nämä luovat visuaalisen esityksen labyrintin ratkaisemisesta
+- Ensimmäinen ohje "Tallenna uusi labyrintti" on toimintoa varten, jonka avulla tallennetaan uusi labyrintti koneelle
+- Toinen ohje toimintoihin "Ajastetut 200x200", nämä ottavat vain ajan kauan algoritmillä kesti selvittää reitti 200x200 kokoisessa labyrintissä
+- Viimeinen ohje toimintoihin "Visuaalinen 5x5", nämä luovat visuaalisen esityksen labyrintin ratkaisemisesta
 
 ## Huomautukset
 - Tällä hetkellä ei voi käyttää ensin algoritmin ajastus toimintoa ja sitten visuaalista esitystä.  
   - Sovellus pitää käynnistää näiden välillä uudelleen, mutta ajastus toimintoja ja visuaalisia esityksiä voi keskenään käyttää vapaasti.  
 - Visuaalisten esitysten kuuluu päästä maaliin ennen kuin ikkunan voi sammuttaa, muuten saa virheilmoituksen
 - Sovelluksen voi ainostaan sammuttaa keyboardinteruptilla "ctrl + c"
+
+*Nämä virheet tapahtuvat käytetyn pyamaze kirjaston takia.*

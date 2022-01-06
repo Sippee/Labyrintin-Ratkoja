@@ -1,12 +1,25 @@
+# Määrittelydokumentti
+
 ## Ohjelmoitikielet
-Käytän pythonia, ja aion käyttää sitä tässä työssä. Ymmärrän hieman javaa, mutta en pysty vertaisarvioimaan javalla tehtyä projektia hyvin.  
+
+Käytän pythonia, ja aion käyttää sitä tässä työssä. Ymmärrän hieman javaa, mutta en pysty vertaisarvioimaan javalla tehtyä projektia hyvin.
+
 ## Algoritmit ja tietorakenteet
-DFS, eli deep first search. Tällä algoritmillä yleensä ratkaistaan lyhin reitti.  
+
+Käytettävät algoritmit ovat wall follower ja dead-end filling.
+
 ## Ongelma ja sen tavoitteet
-Ratkaista sokkeloiden lyhin reitti. Erilaisten sokkeloiden ratkaiseminen  
+
+Käytetään näitä algoritmejä ratkaisemaan labyrinttejä.
+
 ## Lähteet
-(Pitää lisätä, luin monesta paikkaa, ja tira-kursseilta)
+
+[Wikipedia](https://en.wikipedia.org/wiki/Maze-solving_algorithm)
+
 ## Opinto-ohjelma
+
 Kuulun vielä tällä hetkellä fysikaalisten tieteiden kandiohjelmaan.
+
 ## Kieli
+
 Teen projektin Suomeksi, mutta tarvittaessa voin tehdä sen Englanniksi tai Suomeksi.

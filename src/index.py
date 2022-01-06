@@ -9,10 +9,11 @@ ms = MazeSolver(5,5)
 ms2 = MazeSolver(5,5)
 OPTION = "100"
 
-while OPTION != "0":
-    OPTION = input("""Käyttöohjeessa kuinka suorittaa sovellus ilman virheitä.
+print("Käyttöohjeessa kuinka suorittaa sovellus ilman virheitä.")
 
-Options:
+while OPTION != "0":
+    OPTION = input("""
+Toiminnot:
 CTRL+C:Sammuta
 1:Tallenna uusi labyrintti
 
@@ -35,7 +36,7 @@ Visuaalinen 5x5:
 
     elif OPTION == "2":
         ms = MazeSolver(5,5)
-        ms.maze.CreateMaze(loadMaze="src/maze/maze-200x200.csv")
+        ms.maze.CreateMaze(loadMaze="src/maze/maze-400x400.csv")
 
         starttime=time.time_ns()
 
@@ -46,7 +47,7 @@ Visuaalinen 5x5:
 
     elif OPTION == "3":
         ms = MazeSolver(5,5)
-        ms.maze.CreateMaze(loadMaze="src/maze/maze-200x200.csv")
+        ms.maze.CreateMaze(loadMaze="src/maze/maze-400x400.csv")
 
         starttime=time.time_ns()
 

@@ -1,7 +1,7 @@
 """Dead end filling algoritmi
 """
 
-import maze.maze_wallfollower as wf
+import src.maze.maze_wallfollower as wf
 
 def dead_end_filling(maze, aloitus = None):
     """Dead end filling algoritmin päärunko

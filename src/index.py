@@ -36,7 +36,7 @@ Visuaalinen 5x5:
 
     elif OPTION == "2":
         ms = MazeSolver(5,5)
-        ms.maze.CreateMaze(loadMaze="src/maze/maze-400x400.csv")
+        ms.maze.CreateMaze(loadMaze="src/maze/maze-20x20.csv")
 
         starttime=time.time_ns()
 
@@ -47,7 +47,7 @@ Visuaalinen 5x5:
 
     elif OPTION == "3":
         ms = MazeSolver(5,5)
-        ms.maze.CreateMaze(loadMaze="src/maze/maze-400x400.csv")
+        ms.maze.CreateMaze(loadMaze="src/maze/maze-20x20.csv")
 
         starttime=time.time_ns()
 
@@ -58,7 +58,7 @@ Visuaalinen 5x5:
 
     elif OPTION == "4":
         ms = MazeSolver(5,5)
-        ms.maze.CreateMaze(loadMaze="src/maze/maze-200x200.csv")
+        ms.maze.CreateMaze(loadMaze="src/maze/maze-20x20.csv")
 
         starttime=time.time_ns()
 

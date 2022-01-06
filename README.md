@@ -16,6 +16,12 @@ Nyt ohjelman voi käynnistää komennolla:
 poetry run invoke start
 ```
 
+## Dokumentaatio
+[Käyttöohje](dokumentaatio/kayttoohje.md)  
+[Vaatimusmäärittely](dokumentaatio/määrittelydokumentti.md)  
+[Toteutusdokumentti](dokumentaatio/toteutusdokumentti.md)  
+[Testausdokumentti](dokumentaatio/testausdokumentti.md)
+
 ## Viikkoraportit
 [Viikkoraportti 1](dokumentaatio/viikkoraportti1.md)  
 [Viikkoraportti 2](dokumentaatio/viikkoraportti2.md)  
@@ -24,11 +30,3 @@ poetry run invoke start
 [Viikkoraportti 5](dokumentaatio/viikkoraportti5.md)  
 [Viikkoraportti 6](dokumentaatio/viikkoraportti6.md)  
 [Viikkoraportti 7](dokumentaatio/viikkoraportti7.md)  
-
-## Dokumentaatio
-[Käyttöohje](dokumentaatio/kayttoohje.md)  
-[Vaatimusmäärittely](dokumentaatio/määrittelydokumentti.md)  
-[Toteutusdokumentti](dokumentaatio/toteutusdokumentti.md)
-
-![GitHub Actions](https://github.com/Sippee/Labyrintin-Ratkoja/workflows/CI/badge.svg)
-[![codecov](https://codecov.io/gh/Sippee/Labyrintin-Ratkoja/branch/main/graph/badge.svg?token=MXEGVGMHZ0)](https://codecov.io/gh/Sippee/Labyrintin-Ratkoja)  

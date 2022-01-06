@@ -2,9 +2,8 @@
 
 ## Koodin testaus
 
-Pytestin kattavuusraportti
-
-![raportti](./kuvat/testaus-kattavuus.PNG)
+![raportti](./kuvat/testaus-kattavuus.PNG)  
+*Pytestin kattavuusraportti*
 
 Yksikkötestauksessa käytettiin pytestiä. Sovelluksen kaikki metodit ja luokat ovat testattu. Testaamatta on jätetty käyttöliittymästä vastaava index.py. Pytest tarkastaa algoritmien ja luokan MazeSolver toimivuuden.
 
@@ -29,4 +28,7 @@ Ensimmäisenä esimerkkinä 20x20 labyrintin ratkaisut:
 - Dead-end fillingillä kului 432.7 ms
 - BFS kului 533219.6 ms, eli 533 s, 8.88 min
 
-![vertailu](./kuvat/testaus-nopeuksien-vertailu.PNG)
+![vertailu](./kuvat/testaus-nopeuksien-vertailu.PNG)  
+*Kuvassa vertaillaa wall followerin ja dead-end fillingin aikoja*
+
+Huomataan, että dead-end filling kasvaa exponentiaalisesti, kun wallfollower ei kasva. Tämä todennäköisesti tapahtuu, koska labyrintti on täydellinen, eli dead-end filling käy koko labyrintin läpi, kun wallfollower voi käydä vain toisella puolella labyrintistä. Huomataan myös, että leveyshaku on todella paljon hitaampi kuin kumpikaan, ei ollut edes järkevää lisätä samaan kaavioon, koska parhaimmillaan 400x400 labyrintissä se on yli 6000 kertaa suurempi arvo kuin wall followerin.

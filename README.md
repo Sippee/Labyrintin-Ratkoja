@@ -30,3 +30,4 @@ poetry run invoke start
 [Viikkoraportti 5](dokumentaatio/viikkoraportti5.md)  
 [Viikkoraportti 6](dokumentaatio/viikkoraportti6.md)  
 [Viikkoraportti 7](dokumentaatio/viikkoraportti7.md)  
+[Viikkoraportti 10](dokumentaatio/viikkoraportti10.md)

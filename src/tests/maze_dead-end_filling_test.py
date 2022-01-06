@@ -1,8 +1,8 @@
 import unittest
-import src.maze.maze_dead_end_filling as deaf
+import maze.maze_dead_end_filling as deaf
 from pyamaze import maze
 
-class Testdead_end_filling(unittest.TestCase):
+class dead_end_fillingTest(unittest.TestCase):
     def setUp(self):
         pass
     def test_dead_end_filling(self):

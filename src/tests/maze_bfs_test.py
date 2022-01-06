@@ -1,8 +1,8 @@
 import unittest
-import src.maze.maze_bfs as bfs
+import maze.maze_bfs as bfs
 from pyamaze import maze
 
-class Testbfs(unittest.TestCase):
+class bfsTest(unittest.TestCase):
     def setUp(self):
         pass
     def test_bfs(self):

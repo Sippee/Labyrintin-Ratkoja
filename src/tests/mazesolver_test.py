@@ -1,8 +1,8 @@
 import unittest
-import src.maze.mazesolver as ms
+import maze.mazesolver as ms
 from pyamaze import maze
 
-class TestMazeSolver(unittest.TestCase):
+class MazeSolverTest(unittest.TestCase):
     def setUp(self):
         self.amaze = ms.MazeSolver(2,2)
         self.assertEqual(self.amaze.height,2)

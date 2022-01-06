@@ -1,8 +1,8 @@
 import unittest
-import src.maze.maze_wallfollower as wf
+import maze.maze_wallfollower as wf
 from pyamaze import maze
 
-class Testwallfollower(unittest.TestCase):
+class wallfollowerTest(unittest.TestCase):
     def setUp(self):
         pass
     def test_wf(self):

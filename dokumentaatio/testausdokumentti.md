@@ -2,9 +2,8 @@
 
 ## Koodin testaus
 
-Pytestin kattavuusraportti
-
-![raportti](./kuvat/testaus-kattavuus.PNG)
+![raportti](./kuvat/testaus-kattavuus.PNG)  
+*Pytestin kattavuusraportti*
 
 Yksikkötestauksessa käytettiin pytestiä. Sovelluksen kaikki metodit ja luokat ovat testattu. Testaamatta on jätetty käyttöliittymästä vastaava index.py. Pytest tarkastaa algoritmien ja luokan MazeSolver toimivuuden.
 

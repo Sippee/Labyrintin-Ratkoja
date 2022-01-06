@@ -36,7 +36,7 @@ Visuaalinen 5x5:
 
     elif OPTION == "2":
         ms = MazeSolver(5,5)
-        ms.maze.CreateMaze(loadMaze="src/maze/maze-100x100.csv")
+        ms.maze.CreateMaze(loadMaze="src/maze/maze-200x200.csv")
 
         starttime=time.time_ns()
 
@@ -47,7 +47,7 @@ Visuaalinen 5x5:
 
     elif OPTION == "3":
         ms = MazeSolver(5,5)
-        ms.maze.CreateMaze(loadMaze="src/maze/maze-100x100.csv")
+        ms.maze.CreateMaze(loadMaze="src/maze/maze-200x200.csv")
 
         starttime=time.time_ns()
 
@@ -58,7 +58,7 @@ Visuaalinen 5x5:
 
     elif OPTION == "4":
         ms = MazeSolver(5,5)
-        ms.maze.CreateMaze(loadMaze="src/maze/maze-100x100.csv")
+        ms.maze.CreateMaze(loadMaze="src/maze/maze-200x200.csv")
 
         starttime=time.time_ns()
 
@@ -69,7 +69,7 @@ Visuaalinen 5x5:
 
     elif OPTION == "5":
         ms2 = MazeSolver(5,5)
-        ms2.maze.CreateMaze()
+        ms2.maze.CreateMaze(loadMaze="src/maze/maze-5x5.csv")
 
         polku = ms2.wall_follower()
 
@@ -81,7 +81,7 @@ Visuaalinen 5x5:
 
     elif OPTION == "6":
         ms2 = MazeSolver(5,5)
-        ms.maze.CreateMaze()
+        ms.maze.CreateMaze(loadMaze="src/maze/maze-5x5.csv")
 
         polku = ms.dead_end_filling()
 
@@ -93,7 +93,7 @@ Visuaalinen 5x5:
 
     elif OPTION == "7":
         ms2 = MazeSolver(5,5)
-        ms.maze.CreateMaze()
+        ms.maze.CreateMaze(loadMaze="src/maze/maze-5x5.csv")
 
         polku = ms.bfs()
 

@@ -2,7 +2,11 @@
 
 ## Koodin testaus
 
-Pytestillä vielä huono tulos.
+Pytestin kattavuusraportti
+
+![raportti](./kuvat/testaus-kattavuus.PNG)
+
+Yksikkö testauksessa käytettiin pytestiä. Sovelluksen kaikki metodit ja luokat ovat testattu. Testaamatta on jätetty käyttöliittymästä vastaava index.py. Pytest tarkastaa algoritmien ja luokan MazeSolver toimivuuden.
 
 Koodinlaadun tarkastamiseen käytetty pylintiä. Pylintin tarkastus asetuksia on hieman muokattu, sieltä on poistettu turhat tarkastukset. Pylint antaa arvosanaksi 10.
 

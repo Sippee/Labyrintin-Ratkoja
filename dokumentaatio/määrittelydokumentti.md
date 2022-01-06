@@ -10,7 +10,7 @@ Käytettävät algoritmit ovat wall follower ja dead-end filling.
 
 ## Ongelma ja sen tavoitteet
 
-Käytetään näitä algoritmejä ratkaisemaan labyrinttejä.
+Käytetään wall follower ja dead-end filling algoritmejä ratkaisemaan labyrinttejä.
 
 ## Lähteet
 

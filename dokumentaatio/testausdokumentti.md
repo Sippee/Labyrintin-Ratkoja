@@ -28,3 +28,5 @@ Ensimmäisenä esimerkkinä 20x20 labyrintin ratkaisut:
 - Wall followerilla kului 77.8 ms
 - Dead-end fillingillä kului 432.7 ms
 - BFS kului 533219.6 ms, eli 533 s, 8.88 min
+
+![vertailu](./kuvat/testaus-nopeuksien-vertailu.PNG)

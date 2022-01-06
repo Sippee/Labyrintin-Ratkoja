@@ -27,4 +27,5 @@ poetry run invoke start
   - Sovellus pitää käynnistää näiden välillä uudelleen, mutta ajastus toimintoja ja visuaalisia esityksiä voi keskenään käyttää vapaasti.  
 - Visuaalisten esitysten kuuluu päästä maaliin ennen kuin ikkunan voi sammuttaa, muuten saa virheilmoituksen
 - Sovelluksen voi ainostaan sammuttaa keyboardinteruptilla "ctrl + c"
+
 *Nämä virheet tapahtuvat käytetyn pyamaze kirjaston takia.*

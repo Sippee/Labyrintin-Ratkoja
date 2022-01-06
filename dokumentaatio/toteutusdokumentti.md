@@ -36,6 +36,8 @@ Isoin parannus työhön olisi tehdä oma labyrintin luomis koodi. Käytän täss
 
 Työhön voisi myös lisätä UI:n, jonka avulla saataisiin parempi käyttäjäkokemus. UI olisi ollut helppo lisätä, mutta aiemmin mainitun ongelman takia se on vaikeaa.
 
+Labyrintit voisivat tallentua omaan kansioon. (Tarvitsee uuden labyrintin luomis työkalun)
+
 Dead-end filling algoritmissä voisi ehkä käyttää jotakin parempaa navigointi algoritmiä kuin wall follower.
 
 Käyttäjä voisi konfiguroida paremmin, minkä labyrintin haluaa tai millaisen haluaa luoda.
